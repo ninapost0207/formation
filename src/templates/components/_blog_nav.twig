@@ -1,0 +1,15 @@
+<div class="blog__nav">
+    <div class="blog__share-cont">
+        <span>Share</span>
+        <div>
+            {% for share in shares %}
+                <a href={{ share.link_to }}>
+                    <img src="{{ share.link_to_img }}" alt={{ share.link_to }}>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    <h3>In this article you will learn:</h3>
+    <div></div>
+    <div class="blog__nav__cont"></div>
+</div>

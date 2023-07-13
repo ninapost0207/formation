@@ -1,0 +1,32 @@
+.pagination {
+	.prev,
+	.next {
+		padding-right: 15px;
+
+		&:before {
+			position: absolute;
+			content: '';
+			width: 0;
+		    height: 0;
+		    border-style: solid;
+		    border-width: 4px 0 4px 8px;
+		    border-color: transparent transparent transparent $black;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    right: 0;
+		    margin-top: 0;
+		}
+	}
+
+	.prev {
+		padding-right: 0.757rem;
+		padding-left: 15px;
+
+		&:before {
+			right: auto;
+			left: 0;
+			transform: rotate(180deg) translateY(50%);
+			margin-top: 0;
+		}
+	}
+}

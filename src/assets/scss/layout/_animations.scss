@@ -1,0 +1,25 @@
+/* Animations
+================================================== */
+
+.animated-card {
+  transition: $transitionEaseInOut;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; top: 150%;}
+  to { opacity: 1;  top: 35px}
+}
+
+@keyframes fadein2 {
+  from { opacity: 0; top: 150%;}
+  to { opacity: 1;  top: 60px}
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to { transform: rotate(360deg); }
+}

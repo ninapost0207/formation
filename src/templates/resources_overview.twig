@@ -1,0 +1,103 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = 'Resources Overview' %}
+{% set pageClass = 'Resources_overview' %}
+{% set resource_blocks = {
+  modernize: {
+    main_header: "How to Modernize Loyalty Offers",
+    link_to: "resources_theme.html",
+    resources: [
+      {
+        resource_id: "011",
+        link_to_img: "../assets/img/resources__modernize__1.png",
+        resource_header: "Title of Resource 1",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit rerum modi. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+      {
+        resource_id: "012",
+        link_to_img: "../assets/img/resources__modernize__2.png",
+        resource_header: "Title of Resource 2",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+      {
+        resource_id: "013",
+        link_to_img: "../assets/img/resources__modernize__3.png",
+        resource_header: "Title of Resource 3",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+    ]
+  },
+  offers: {
+    main_header: "Dynamic Offers in Action",
+    link_to: "http://google.com",
+    resources: [
+      {
+        resource_id: "021",
+        link_to_img: "../assets/img/resources__offers__1.png",
+        resource_header: "Title of Resource 1",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit rerum modi. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+      {
+        resource_id: "022",
+        link_to_img: "../assets/img/resources__offers__2.png",
+        resource_header: "Title of Resource 2",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+      {
+        resource_id: "023",
+        link_to_img: "../assets/img/resources__offers__3.png",
+        resource_header: "Title of Resource 3",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+    ]
+  },
+  future: {
+    main_header: "The Future of Modern Loyalty",
+    link_to: "http://google.com",
+    resources: [
+      {
+        resource_id: "031",
+        link_to_img: "../assets/img/resources__future__1.png",
+        resource_header: "Title of Resource 1",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit rerum modi. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+      {
+        resource_id: "032",
+        link_to_img: "../assets/img/resources__future__2.png",
+        resource_header: "Title of Resource 2",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+      {
+        resource_id: "033",
+        link_to_img: "../assets/img/resources__future__3.png",
+        resource_header: "Title of Resource 3",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+    ]
+  }
+
+} %}
+
+
+
+
+{% block content %}
+  {% include "partials/_header.html" %}
+  <div class="container">
+    {% include "components/_resources-menu.twig" %}
+    {% include "components/_resources-search.twig" %}
+  </div>
+  <section class="resources__section">
+    <div class="container">
+      {% include "components/_resources-block.twig" with {block: resource_blocks.modernize} %}
+      {% include "components/_resources-block.twig" with {block: resource_blocks.offers} %}
+      {% include "components/_resources-block.twig" with {block: resource_blocks.future} %}
+    </div>
+  </section>
+  <section class="formation-works__section">
+    <div class="container">
+      {% include "components/_formation-works.twig" %}
+    </div>
+  </section>
+{% endblock %}
+ 

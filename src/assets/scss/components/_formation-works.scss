@@ -1,0 +1,176 @@
+
+.formation-works__section {
+    width: 100%;
+    padding-top: 63px;
+    padding-bottom: 80px;
+    background-color: #E3ECFC;
+}
+
+
+
+
+.formattion__work-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.formation-works {
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+
+
+    @include respond-to(xl) {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-flex;
+    }
+
+    @include respond-to(sm) {
+        flex-direction: column;
+    }
+
+
+    &__text-area {
+
+        @include respond-to(xl) {
+            max-width: 450px;
+        }
+
+        @include respond-to(md) {
+            max-width: 340px;
+        }
+
+        
+        @include respond-to(sm) {
+            max-width: 500px;
+        }
+
+        .formation-works__header {
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 70px;
+
+            @include respond-to(xl) {
+                font-size: 29px;
+                line-height: 50px;
+            }
+
+            @include respond-to(md) {
+                font-size: 23px;
+                line-height: 34px;
+            }
+
+            @include respond-to(sm) {
+                text-align: center;
+                font-size: 29px;
+                line-height: 50px;
+            }
+        }
+    
+        .formation-works__text {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 38px;
+            color: #333333;
+            max-width: 585px;
+            margin-top: 25px;
+            margin-right: 20px;
+
+            @include respond-to(xl) {
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            @include respond-to(md) {
+                font-size: 13px;
+                line-height: 23px;
+            }
+
+            @include respond-to(sm) {
+                text-align: center;
+                font-size: 20px;
+                line-height: 38px;
+            }
+        }
+    }
+
+
+    &__arrow {
+        width: 150px;
+        height: 60px;
+        transform: rotate(7.7deg);
+
+        @include respond-to(xl) {
+            width: 120px;
+            height: 48px;
+        }
+
+        @include respond-to(md) {
+            width: 90px;
+            height: 36px;
+        }
+
+        @include respond-to(sm) {
+            display: none;
+        }
+    }
+
+
+    &__button-cont {
+        width: 306px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 51px;
+        margin-right: 56px;
+        margin-top: 85px;
+
+        @include respond-to(xl) {
+            margin-left: 20px;
+        }
+
+        @include respond-to(md) {
+            margin-left: 0px;
+            width: 214px;
+        }
+
+        @include respond-to(sm) {
+            margin: 30px 30px 0 ;
+        }
+
+
+        & button {
+            z-index: 10;
+            width: 277px;
+            height: 83px;
+            background: #FFFFFF;
+
+            @include respond-to(md) {
+                width: 193px;
+                height: 58px;
+            }
+        }
+
+        & img {
+            position: relative;
+            top: -15px;
+
+            @include respond-to(md) {
+                top: -10px;
+
+            }
+        }
+    }
+
+
+
+}

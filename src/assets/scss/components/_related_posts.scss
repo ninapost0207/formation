@@ -1,0 +1,42 @@
+.related-posts {
+    font-family: 'HelveticaNeueCyr';
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    font-style: normal;
+
+    color: #000000;
+
+    &__header {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    &__line {
+        margin-top: 30px;
+        width: 100%;
+        border-bottom: 1px solid #555555;
+        height: 0;
+    }
+
+    &__post-cont {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        //margin-top: 65px;
+        flex-direction: row;
+
+        
+        @include respond-to(sm) {
+            flex-direction: column;
+
+            & .resources__preview__item {
+                width: 100%;
+            }
+        }
+
+    }
+
+
+}

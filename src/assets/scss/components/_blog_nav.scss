@@ -1,0 +1,91 @@
+.blog__nav {
+    width: 23%;
+    margin-right: 5%;
+
+    
+    @include respond-to(sm) {
+        width: 80%; 
+        border-bottom: 1px solid #555555;
+        padding-bottom: 30px;
+    }
+
+    .blog__share-cont {
+        margin-top: 00px;
+        
+    
+        & span {
+            font-family: 'HelveticaNeueCyr';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #666666;
+        }
+    
+        & > div {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+    
+            & img {
+                margin-right: 18px;
+            }
+        }
+    }
+
+    & h3 {
+        margin-top: 60px;
+        font-family: 'HelveticaNeueCyr';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+    }
+    
+
+    & h3 + div{
+        width: 100%;
+        height: 0px;
+        border-bottom: 1px solid #555555;
+        margin-top: 52px;
+    }
+
+    &__cont {
+        width: 100%;
+
+
+        & a {
+            width: 100%;
+            display: inline-block;
+            margin-top: 35px;
+            cursor: pointer;
+            font-family: 'HelveticaNeueCyr';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: black;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @include respond-to(xl) {
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+            @include respond-to(md) {
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+            @include respond-to(sm) {
+                text-align: center;
+            }
+        }
+    }
+}

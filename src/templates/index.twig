@@ -1,0 +1,62 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = 'Homepage' %}
+{% set pageClass = 'homepage' %}
+
+{% block content %}
+  {% include "partials/_header.html" %}
+  
+  <main>
+    <section class="hero-block {{ pageClass is defined ? pageClass : '' }}">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="left-part">
+          <p class="before-header">Dynamic Offer Optimization for Modern Loyalty</p>
+            <h1>Make Loyalty to your Brand an Easy Choice</h1>
+            <p class="info">In a digital, always-on world where consumers have an infinite number of choices, differentiate your brand from the sea of transactional competitors with dynamic offers rather than mass promotions.</p>
+
+            <p class="button-wrap">
+              <a href="#" class="btn request-btn">Request a Demo</a>
+              <a href="#" class="btn action-btn">See Formation in Action</a>
+            </p>
+          </div>
+
+          <div class="right-part">
+            <p class="changed-images">
+              <img src="../assets/img/homepage-hero-img-1.png" alt="">
+              <img src="../assets/img/homepage-hero-img-2.png" alt="">
+            </p>
+            <p class="bg-images">
+              <img src="../assets/img/black-circle.png" alt="">
+              <span class="first-circle"></span>
+              <span class="second-circle"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include "components/_download.twig" %}
+    
+    {% include "components/_logos.twig" %}
+
+    {% include "components/_optimization-home.twig" %}
+
+    {% include "components/_profitability-slider.twig" %}
+
+    {% include "components/_new-slider.twig" %}
+
+    {% include "components/_personalization.twig" %}
+
+
+    <section class="footer-wrapper">
+      <div class="container">
+        <h2>Get Started for Free</h2>
+        <a href="#" class="btn request-btn">Request a Demo</a>
+      </div>
+    </section>
+  </main>
+
+  {% include "partials/_footer.html" %}
+
+{% endblock %}

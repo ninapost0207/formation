@@ -1,0 +1,20 @@
+<div class="resources__block_hero">
+    <div class="resources__block_hero__left">
+        <h1 class="resources__block_hero__header">{{ block.main_header }}</h1>
+        <div class="resources__block_hero__span">FEATURED</div>
+        <div class="resources__block_hero__blocks-container">
+            <div class="resources__block_hero__item">
+                {% include "./_resources-block-item.twig" with {resource: block.resources[1]} %} 
+            </div>
+            <div class="resources__block_hero__item">
+                {% include "./_resources-block-item.twig" with {resource: block.resources[2]} %}
+            </div>
+        </div>
+    </div>
+    <div class="resources__block_hero__right">
+        <div class="resources__block_hero__span">FEATURED</div>
+        <div class="resources__block_hero__item">
+            {% include "./_resources-block-item.twig" with {resource: block.resources[0]} %}
+        </div>
+    </div>
+</div>

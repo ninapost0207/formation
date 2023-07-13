@@ -1,0 +1,102 @@
+// Form style
+form {
+  input, textarea, button {
+    outline: none;
+    transition: $transitionAll;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+
+.search-form-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -90px;
+    left: 0;
+    transition: ease 200ms top;
+    position: absolute;
+    padding: 20px 0;
+    z-index: 100;
+    width: 100%;
+    background: $light-blue;
+
+    &.open { top: 0; }
+
+    @include respond-to(sm) {
+    	padding-top: 40px;
+    	top: -110px;
+    }
+
+    #searchform {
+    	display: flex;
+    	position: relative;
+
+    	input[type="text"] {
+    		width: 340px;
+		    max-width: 100%;
+		    background: #fff;
+		    height: 50px;
+		    line-height: 50px;
+		    padding: 0 15px;
+		    border: none;
+		    color: $black;
+
+		    @include respond-to(sm) {
+		    	width: 290px;
+		    	padding-right: 65px;
+		    }
+    	}
+
+    	input[type='submit'] {
+    		height: 50px;
+		    line-height: 50px;
+		    border: none;
+		    background: $black;
+		    display: flex;
+		    width: 112px;
+		    align-items: center;
+		    justify-content: center;
+		    font-size: 15px;
+		    font-weight: 500;
+		    color: $white;
+		    cursor: pointer;
+
+		   	@include respond-to(sm) {
+		    	width: 50px;
+		    	top: 0;
+		    	right: 0;
+		    	position: absolute;
+		    	background-image: url('../img/search-icon.svg');
+		    	background-repeat: no-repeat;
+		    	background-position: center;
+		    	font-size: 0;
+		    }
+    	}
+    }
+
+    .close-btn {
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    right: 35px;
+	    border-radius: 50%;
+	    width: auto;
+	    height: auto;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    background: none;
+
+	    @include respond-to(sm) {
+	    	top: 5px;
+	    	right: 5px;
+	    	width: 30px;
+	    	height: 30px;
+	    	transform: none;
+	    }
+    }
+}

@@ -1,0 +1,49 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = 'DYNOO' %}
+{% set pageClass = 'dynoo' %}
+
+{% block content %}
+  {% include "partials/_header.html" %}
+  
+  <main>
+    <section class="dynoo-hero-block">
+      <div class="container">
+      	<h1>Marketing with Data <br/>and Dynamic Offers</h1>
+      	<a href="#" class="btn request-btn white-btn">Request a Demo</a>
+      </div>
+    </section>
+
+    <section class="after-hero-block">
+      <span class="orb"></span>
+      <span class="triangle left-triangle"></span>
+      <span class="triangle right-triangle"></span>
+      <div class="container">
+        <p>The world of mass is not effective. Brands that don’t move towards a world of personalized offers will not survive in the modern era of loyalty.</p>
+      </div>
+    </section>
+
+    {% include "components/_benefits.twig" %}
+
+    {% include "components/_slider.twig" %}
+
+    <section class="download-block">
+    	<div class="container">
+    		<div class="download-block-inner">
+    			<p>Learn how Formation helps brands increase CLV by building deeper customer relationships</p>
+    			<a href="#" class="btn download">Download Now</a>
+    		</div>
+    	</div>
+    </section>
+
+    {% include "components/_optimization.twig" %}
+
+    {% include "components/_calculate.twig" %}
+
+    {% include "components/_features.twig" %}
+
+    {% include "components/_footer-part.twig" %}
+  </main>
+
+{% endblock %}
+

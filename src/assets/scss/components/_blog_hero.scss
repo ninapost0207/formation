@@ -1,0 +1,140 @@
+.blog__hero-cont {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 90px;
+
+    @include respond-to(sm) {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    @include respond-to(xs) {
+        padding-bottom: 40px;
+    }
+
+    & .blog__hero__image-cont {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 49%;
+        position: relative;
+        margin-right: 40px;
+
+        
+        @include respond-to(md) {
+            margin-right: 30px;
+        }
+
+        @include respond-to(sm) {
+            width: 100%;
+            margin-right: 0;
+        }
+
+
+        & .blog__hero__img {
+            width: 90%;
+            z-index: 100;
+        }
+
+        & .blog__hero__ellipse {
+            width: 100%;
+            position: absolute;
+            bottom: -35px;
+
+            @include respond-to(md) {
+                bottom: -25px;
+            }
+
+            @include respond-to(sm) {
+                bottom: -20px;
+            }
+
+        }
+    }
+
+
+    & .blog__hero__text-cont {
+        font-style: normal;
+        font-family: 'HelveticaNeueCyr';
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 50%;
+
+
+        @include respond-to(sm) {
+            width: 80%;
+            margin-top: 60px;
+            align-items: center;
+        }
+
+
+        & .blog__hero__header {
+            width: 100%;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 56px;
+            //margin-right: 40px;
+            padding-right: 20px;
+
+            @include respond-to(xl) {
+                font-size: 35px;
+                line-height: 48px;
+            }
+
+            @include respond-to(md) {
+                font-size: 25px;
+                line-height: 36px;
+            }
+
+            @include respond-to(sm) {
+                font-size: 30px;
+                line-height: 41px;
+                text-align: center;
+            }
+
+            @include respond-to(xs) {
+                font-size: 25px;
+                line-height: 36px;
+            }
+        }
+
+        & span {
+            color: #777676;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 35px;
+
+            @include respond-to(md) {
+                font-size: 14px;
+                line-height: 25px;
+            }
+
+            @include respond-to(sm) {
+                font-size: 18px;
+                line-height: 35px;
+                text-align: center;
+            }
+
+            @include respond-to(xs) {
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+
+        & .blog__hero__author {
+            margin-top: 17px;
+        }
+
+        & .blog__hero__date {
+            margin-top: 2px;
+        }
+    }
+}

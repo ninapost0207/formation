@@ -1,0 +1,114 @@
+.blog__content {
+    width: 73%;
+    font-family: 'SourceSansPro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 150px;
+
+    @include respond-to(sm) {
+        width: 95%;
+    }
+
+    @include respond-to(md) {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    p {
+        margin-top: 46px;
+
+        @include respond-to(md) {
+            margin-top: 30px;
+        }
+
+        & a {
+            text-decoration: underline;
+        }
+    }
+
+    h2 {
+        margin-top: 46px;
+        font-family: 'HelveticaNeueCyr';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+
+        @include respond-to(md) {
+            margin-top: 30px;
+        }
+    }
+
+    h3 {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        //color: red;
+    }
+
+    & strong {
+        font-weight: 700;
+    }
+
+    ul {
+        margin-left: 25px;
+
+        @include respond-to(md) {
+            margin-top: 30px;
+        }
+
+        li {
+            margin-top: 46px;
+            list-style-type: disc;
+            padding-left: 0px;
+            //list-style-position: inside;
+
+            &::marker {
+                font-family: 'HelveticaNeueCyr';
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    ol {
+        
+        & > li {
+            margin-top: 46px;
+            list-style-position: inside;
+
+            &::marker {
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            @include respond-to(md) {
+                margin-top: 30px;
+            }
+                
+        }
+        
+        & p:first-of-type {
+            margin-top: 0;
+        }
+
+        img {
+            margin-top: 46px;
+            width: 60%;
+    
+            @include respond-to(md) {
+                margin-top: 30px;
+            }
+    
+            @include respond-to(sm) {
+                width: 100%;
+            }
+        }
+
+    }
+
+}

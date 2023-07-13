@@ -1,0 +1,115 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = 'Resources Theme' %}
+{% set pageClass = 'Resources_theme' %}
+{% set resource_blocks = {
+  modernize: {
+    main_header: "How to Modernize Loyalty Offers 2",
+    link_to: "resources_theme.html",
+    resources: [
+      {
+        resource_id: "011",
+        link_to_img: "../assets/img/resources__modernize__1.png",
+        resource_header: "Title of Resource 1",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit rerum modi. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+      {
+        resource_id: "012",
+        link_to_img: "../assets/img/resources__modernize__2.png",
+        resource_header: "Title of Resource 2",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+      {
+        resource_id: "013",
+        link_to_img: "../assets/img/resources__modernize__3.png",
+        resource_header: "Title of Resource 3",
+        resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." 
+      },
+    ]
+  }
+
+} %}
+
+
+
+
+{% set resource_previews = {
+  previews: [
+  { 
+    resource_id: "101",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 1",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "102",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 2",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "103",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 3",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "104",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 4",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "105",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 5",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "106",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 6",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "107",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 7",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "108",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 8",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "109",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 9",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  ],
+  totalPages: 9,
+  currentPage: 5
+
+}
+ %}
+
+
+
+{% block content %}
+  {% include "partials/_header.html" %}
+  <div class="container">
+    {% include "components/_resources__block_hero.twig" with {block: resource_blocks.modernize} %}
+  </div>
+  <div class="container">
+    {% include "components/_resources-search.twig" %}
+  </div>
+
+  
+  <section class="resources_theme__preview">
+    <div class="container">
+      {% include "components/_resources__previews.twig" with {previews: resource_previews.previews, pagesTotal: resource_previews.totalPages, currentPage: resource_previews.currentPage} %}
+      </div>
+  </section>
+  
+  
+  <section class="formation-works__section">
+    <div class="container">
+      {% include "components/_formation-works.twig" %}
+    </div>
+  </section>
+{% endblock %}
+ 

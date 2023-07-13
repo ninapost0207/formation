@@ -1,0 +1,79 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = '' %}
+{% set pageClass = 'retail' %}
+
+{% block content %}
+  {% include "partials/_header.html" %}
+  
+  <main>
+    <section class="retail-hero-block hero-block">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="left-part">
+            <p class="before-header">Retail</p>
+            <h1>Driving omni-channel loyalty through Dynamic Offer Optimization</h1>
+
+            <p class="button-wrap">
+              <a href="#" class="btn request-btn">Request a Demo</a>
+            </p>
+          </div>
+
+          <div class="right-part">
+            <img src="../assets/img/retail-hero.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include "components/_business.twig" %}
+
+    <section class="case-study-wrapper">
+      <div class="container">
+        <h2>Case study</h2>
+
+        <div class="case-study-inner">
+          <div class="left-block">
+            <p>After implementing dynamic offers, a national home improvement retailer was able to sustainably increase the engagement of their loyal base while also improving the efficiency of offer campaigns through machine-learning powered optimization.</p>
+
+            <div class="three-items">
+              <div class="item">
+                <p class="title">26%</p>
+                <p class="descr">Personalized offers drove a 26% increase in campaign registrants</p>
+              </div>
+              <div class="item">
+                <p class="title">10x</p>
+                <p class="descr">Optimization of offers increased campaign completion rates by 10x</p>
+              </div>
+              <div class="item">
+                <p class="title">1000x</p>
+                <p class="descr">ML scaled the number of automated offer variations by 1000x</p>
+              </div>
+            </div>
+
+            <a href="#" class="btn request-btn">Read More</a>
+          </div>
+
+          <div class="right-block">
+            <div class="imgWrap">
+              <img src="../assets/img/case-study.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include "components/_slider.twig" %}
+
+    {% include "components/_optimization.twig" %}
+
+    {% include "components/_calculate.twig" %}
+
+    {% include "components/_product-capabilites.twig" %}
+
+    {% include "components/_footer-part.twig" %}
+
+  </main>
+
+{% endblock %}
+

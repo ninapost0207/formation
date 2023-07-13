@@ -1,0 +1,245 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = 'Join Our Team' %}
+{% set pageClass = 'page_join' %}
+
+
+
+
+{% block content %}
+  	{% include "partials/_header.html" %}
+
+	<section class="join-team">
+		<div class="container">
+			<h2 class="join-team__header">Join our team</h2>
+			<p class="join-team__text">We have lofty goals to improve customer engagement, and we know 
+				that meeting them will require assembling a diverse team of talented individuals.</p>
+			<img src="../assets/img/join-team__header.jpg" alt="Our team" class="join-team__img">
+		</div>
+	</section>
+
+
+	<section class="want-join">
+		<div class="container">
+			<div class="want-join__left">
+				<h2 class="want-join__header header_h2">Want to join Formation?</h2>
+				<a href="#" class="btn request-btn want-join__button">See Open Postions</a>
+			</div>
+			<div class="want-join__images">
+				<img src="../assets/img/our-team_1.jpg" alt="Our team" class="want-join__img want-join__img-1">
+				<img src="../assets/img/Staff-3.jpg" alt="Our team" class="want-join__img want-join__img-2">
+				<img src="../assets/img/join-dog.png" alt="Our team" class="want-join__img want-join__img-3">
+				<img src="../assets/img/Staff-2.jpg" alt="Our team" class="want-join__img want-join__img-4">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="why-formation">
+		<div class="container">
+			<h2 class="why-formation__header header_h2">Why Formation?</h2>
+			<div class="why-formation__block">
+				<div class="why-formation__block__header-cont">
+					<div class="header-line">
+						<h3 class="header">How we work</h3>
+					</div>
+				</div>
+				<div class="why-formation__block__content-cont">
+					<h4 class="why-formation__block__subheader">Our mission is to use data to serve human motivation.</h4>
+					<p class="why-formation__block__text">Since 2015, we’ve been hard at work building a platform that 
+						fundamentally enhances the way in which customers are able to interact with the brands they love. 
+						That work has just begun.<br><br>As we continue the pursuit of our mission, we are looking to 
+						build a world-class team of individuals, all of whom will drive impact in a meaningful way.</p>
+					<img src="../assets/img/top-startups.svg" alt="Top startups logo" class="why-formation__block__logo">
+				</div>
+			</div>
+
+			<div class="why-formation__block">
+				<div class="why-formation__block__header-cont">
+					<div class="header-line">
+						<h3 class="header">Culture</h3>
+					</div>
+				</div>
+				<div class="why-formation__block__content-cont">
+					<h4 class="why-formation__block__subheader">Our Culture Includes Everyone.</h4>
+					<p class="why-formation__block__text">At Formation we believe that diversity, equity, and inclusion 
+						are essential to our success. We are committed to ensuring Formation is a fair and welcoming 
+						place to work for all, where we celebrate the myriad of perspectives, backgrounds and experiences 
+						of our team members. We embrace each other as the unique individuals we are.<br><br>Above all, 
+						we foster inclusive environments in order to do the best work of our lives.</p>
+				</div>
+			</div>
+
+			<div class="why-formation__block">
+				<div class="why-formation__block__header-cont">
+					<div class="header-line">
+						<h3 class="header">Benefits</h3>
+					</div>
+				</div>
+				<div class="why-formation__block__content-cont">
+					<h4 class="why-formation__block__subheader">We invest in the health & well-being of our team</h4>
+					<div class="why-formation__block__benefits">
+						<div class="benefit">
+							<img src="../assets/img/benefit_health.svg" alt="Health logo" class="benefit__logo">
+							<h5 class="benefit__header">Health</h5>
+							<p class="benefit__text">100% medical, dental, and vision premiums paid for full-time employees and eligible dependents.</p>
+						</div>
+						<div class="benefit">
+							<img src="../assets/img/benefit_commuter.svg" alt="Health logo" class="benefit__logo">
+							<h5 class="benefit__header">Commuter Benefits</h5>
+							<p class="benefit__text">We assist you with getting to and from work, including pre-tax transit benefits or a pre-tax parking benefit.</p>
+						</div>
+						<div class="benefit">
+							<img src="../assets/img/benefit_pto.svg" alt="Health logo" class="benefit__logo">
+							<h5 class="benefit__header">Discretionary PTO</h5>
+							<p class="benefit__text">We appreciate work-life balance and have a discretionary PTO policy in addition to 12 paid holidays per year.</p>
+						</div>
+						<div class="benefit">
+							<img src="../assets/img/benefit_wellness.svg" alt="Health logo" class="benefit__logo">
+							<h5 class="benefit__header">Wellness</h5>
+							<p class="benefit__text">We invest in your well-being with our Wellness Reimbursement Program. Employees have access to meditation and mindfulness resources.</p>
+						</div>
+						<div class="benefit">
+							<img src="../assets/img/benefit_family.svg" alt="Health logo" class="benefit__logo">
+							<h5 class="benefit__header">Family Friendly</h5>
+							<p class="benefit__text">We are family-oriented and provide paid parental leave for those growing their families</p>
+						</div>
+						<div class="benefit">
+							<img src="../assets/img/benefit_growth.svg" alt="Health logo" class="benefit__logo">
+							<h5 class="benefit__header">Growth & Development</h5>
+							<p class="benefit__text">We offer company-wide trainings and an internal mentorship program.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<section class="life-formation">
+		<div class="container">
+			<h2 class="life-formation__header header_h2">Life at Formation</h2>
+			<div class="life-formation__block">
+				<div class="block__left">
+					<span class="block__header">Huge impact.</span>
+					<span class="block__header">Cutting-edge tech.</span>
+					<span class="block__header">Great team.</span>
+				</div>
+				<div class="block__right">
+					<div class="carousel" id="life-formation__carousel">	
+						<div class="life-formation__slider">
+							<div class="slider-block">
+								<div class="slider-block-inner">
+								  <div class="owl-carousel">
+									<div class="item">
+									  	<img src="../assets/img/Staff-1.jpg" alt="Our team photo 1" class="image">
+									</div>
+									<div class="item">
+									  	<img src="../assets/img/our-team_2.jpg" alt="Our team photo 2" class="image">
+									</div>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="circle-cont">
+						<img src="../assets/img/blog__hero_ellipse.svg" alt="" class="circle">
+					</div>
+				</div>
+			</div>
+			<div class="life-formation__block">
+				<div class="block__right">
+					<img src="../assets/img/our-office.jpg" alt="Our team photo 1" class="image">
+					<div class="circle-cont">
+						<img src="../assets/img/blog__hero_ellipse.svg" alt="" class="circle">
+					</div>
+				</div>
+				
+				<div class="block__left">
+					<p class="block__text">Join us and help improve customer engagement for some of the 
+						world’s largest brands. Build innovative products that disrupt the status quo.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+	<section class="employee-spotlight">
+		<div class="container">
+			<h2 class="employee-spotlight__header header_h2">Employee Spotlight</h2>
+			<div class="employee-spotlight__slider">
+				<div class="slider-block">
+					<div class="slider-block-inner">
+					  <div class="owl-carousel">
+						<div class="item">
+							<img src="../assets/img/Erica-Sabalones.jpg" alt="Erica Sabalones / HR Manager" class="image">
+							<div class="text-cont">
+								<h3 class="block__header">Erica Sabalones / HR Manager</h3>
+								<h4 class="block__subheader">What do you find most interesting about the work you are doing?</h4>
+								<p class="block__text">The most interesting aspect of the work I do is interacting with brilliant 
+									people. Our employees are exceptional at what they do and they have incredible backgrounds 
+									and interests.</p>
+								<h4 class="block__subheader">What motivates your work, what keeps you going?</h4>
+								<p class="block__text">One of our company values is “We are always learning”. This resonates 
+									with my day to day work. I am motivated to continuously iterate, reinvent and improve how 
+									I do things at Formation.</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="../assets/img/Sarah-Siegel.jpg" alt="Sarah Siegel / Data Analyst" class="image">
+							<div class="text-cont">
+								<h3 class="block__header">Erica Sabalones / HR Manager</h3>
+								<h4 class="block__subheader">What was a major selling point for you to consider working at Formation?</h4>
+								<p class="block__text">Flexibility and the types of data and projects you have the opportunity to work on/with.</p>
+								<h4 class="block__subheader">How has Formation promoted your professional development?</h4>
+								<p class="block__text">By being given many, many opportunities to speak to and with clients I have become better 
+									with client communication and developed my presentation skills further.</p>
+							</div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="join-team_2	">
+		<div class="container">
+			<h2 class="join-team__header">Join our team</h2>
+			<a href="#" class="btn request-btn join-team_2__button">Request a Demo</a>
+		</div>
+	</section>
+
+	<section class="contact-recruting">
+		<div class="container">
+			<h4 class="contact-recruting__header">Contact the Formation recruiting team</h4>
+			<h4 class="contact-recruting__subheader">Have questions for our recruiting team 
+				and our mission to improve customer engagement? Please reach out and say hello.</h4>
+
+			<div class="content">
+				<div class="image-cont">
+					<img src="../assets/img/join-dog.png" alt="A friendship dog" class="image">
+				</div>
+				<form class="form-contact">
+					<input type="text" class="form-input" placeholder="First Name" name="first-name">
+					<input type="text" class="form-input" placeholder="Last Name" name="last-name">
+					<input type="email" class="form-input" placeholder="Email" name="email">
+					<input type="phone" class="form-input" placeholder="Phone Number" name="phone">
+					<textarea class="form-input comments" placeholder="Comments" cols="30" rows="20" name="comments"></textarea>
+				<button type="submit" class="btn request-btn form-contact__button">Submit</button>
+			</form>
+			</div>
+		</div>
+	</section>
+
+
+
+
+{% endblock %}
+  
+
+{% block scripts %}
+  <script type="module" src="../assets/js/partials/join.min.js"></script>
+{% endblock %}

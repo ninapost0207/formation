@@ -1,0 +1,28 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = '' %}
+{% set pageClass = 'LP' %}
+
+{% block content %}
+  {% include "partials/_header.html" %}
+  
+  <main>
+    {% include "components/_lp-hero.twig" %}
+
+    {% include "components/_lp-after-hero.twig" %}
+
+    {% include "components/_lp-video-block.twig" %}
+
+    {% include "components/_lp-70B.twig" %}
+
+    {% include "components/_lp-video-block-second.twig" %}
+
+    {% include "components/_lp-best_practice.twig" %}
+
+    {% include "components/_lp-blue-block.twig" %}
+
+    {% include "components/_lp-white-block.twig" %}
+
+  </main>
+
+{% endblock %}

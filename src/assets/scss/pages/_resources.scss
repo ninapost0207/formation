@@ -1,0 +1,13 @@
+.resources__section {
+    width: 100%;
+    background-color: $orange;
+    border-top: 1px solid #000;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    
+    @include respond-to(sx) {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+}
+

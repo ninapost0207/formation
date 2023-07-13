@@ -1,0 +1,51 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = 'Product' %}
+{% set pageClass = 'product' %}
+
+{% block content %}
+  {% include "partials/_header.html" %}
+  
+  <main>
+    <section class="product-hero-block">
+      <div class="container">
+      	<h1>Data-driven personalization an optimization at scale</h1>
+      	<p>Start your transition from mass to dynamic </p>
+      	<a href="#" class="btn request-btn">Request a Demo</a>
+      </div>
+    </section>
+
+    <section class="download-block">
+    	<div class="container">
+    		<div class="download-block-inner">
+    			<p>Learn how Formation helps brands increase CLV by building deeper customer relationships</p>
+    			<a href="#" class="btn download">Download Now</a>
+    		</div>
+    	</div>
+    </section>
+
+    {% include "components/_features.twig" %}
+
+    <section class="marchitecture-wrap">
+    	<div class="container">
+    		<h2>Platform Marchitecture</h2>
+    		<p>See how Formation fits into your current MarTech stack</p>
+    		<img src="../assets/img/platform.png" alt="">
+    	</div>
+    </section>
+
+    <section class="download-block download-block-new">
+    	<div class="container">
+    		<div class="download-block-inner">
+    			<p>Learn how Formation helps brands increase CLV by building deeper customer relationships</p>
+    			<a href="#" class="btn download">Download Now</a>
+    		</div>
+    	</div>
+    </section>
+
+    {% include "components/_footer-part.twig" %}
+
+  </main>
+
+{% endblock %}
+

@@ -1,0 +1,120 @@
+.resources__block_content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;        
+    font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    height: 232px;
+
+    @include respond-to(lg) {
+        height: 19vw;
+    }
+
+    @include respond-to(sm) {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+
+    &__topic {
+        font-weight: 700;
+        font-size: 70px; 
+        line-height: 91px;
+        width: 25%;
+
+        @include respond-to(md) {
+            font-size: 50px;
+        }
+
+        @include respond-to(sm) {
+            width: auto;
+        }
+    }
+
+    &__line {
+        width: 1px;
+        height: 100%;
+        border: 1px solid black;
+
+        @include respond-to(sm) {
+            display: none;
+        }
+    }
+
+    &__img {
+        width: 33%;
+
+        @include respond-to(sm) {
+            width: 75%;
+        }
+    }
+
+    &__text-block {
+        width: 30%;
+        align-self: flex-start;
+
+        @include respond-to(sm) {
+            margin-top: 40px;
+            width: auto;
+            text-align: center;
+        }
+
+        & h3 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 45px;
+
+            @include respond-to(xl) {
+                line-height: 30px;
+            }
+
+            @include respond-to(md) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            @include respond-to(sm) {
+                font-size: 24px;
+                line-height: 45px;
+            }
+
+            @include respond-to(xs) {
+                margin-top: 0;
+            }
+        }
+
+        & p {
+            margin-top: 16px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+
+            @include respond-to(lg) {
+                margin-top: 6px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            @include respond-to(md) {
+                margin-top: 14px;
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            @include respond-to(sm) {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+
+}

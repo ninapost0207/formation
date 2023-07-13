@@ -1,0 +1,49 @@
+<div class="resources__preview">
+    {% for preview in previews %}
+    <div class="resources__preview__item">
+        {% include "./_resources-block-item.twig" with {resource: preview} %}
+    </div>
+    {% endfor %}
+</div>
+
+<div class="resources__preview__pages">
+
+
+    {% if currentPage > 1 %}
+        <p class="resources__preview__page resources__preview__page-next" data-page_number={{ currentPage-1 }}>&#8592 Back</p>
+    {% endif %}
+
+
+    {% for page in 1..pagesTotal %}
+        {% if page == 1 or page == pagesTotal %}
+            {% if page == currentPage %}
+                <div class="resources__preview__page resources__preview__page_selected" data-page_number={{ page }}>{{ page }}</div>
+                {% else %}
+                <div class="resources__preview__page" data-page_number={{ page }}>{{ page }}</div>
+            {% endif %}
+        {% else %}
+            {% if page == 2 and pagesTotal > 5 and currentPage > 3 %}
+                <span>...</span>
+            {% endif %}
+            
+            {% if page == currentPage-1 or page == currentPage or page == currentPage+1 %}
+                {% if page == currentPage %}
+                    <div class="resources__preview__page resources__preview__page_selected" data-page_number={{ page }}>{{ page }}</div>
+                    {% else %}
+                    <div class="resources__preview__page" data-page_number={{ page }}>{{ page }}</div>
+                {% endif %}
+            {% endif %}
+
+            {% if page == pagesTotal-1 and pagesTotal > 5 and currentPage < pagesTotal-2 %}
+                <span>...</span>
+            {% endif %}
+
+        {% endif %}
+    {% endfor %}
+   
+    {% if currentPage < pagesTotal %}
+        <p class="resources__preview__page resources__preview__page-next" data-page_number={{ currentPage+1 }}>Next &#8594</p>
+    {% endif %}
+
+
+</div>

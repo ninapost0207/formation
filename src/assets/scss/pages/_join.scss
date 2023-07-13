@@ -1,0 +1,842 @@
+.page_join {
+
+    & .header_h2 {
+        font-size: 48px;
+        line-height: 91px;
+        font-style: normal;
+
+        @include respond-to(md) {
+            font-size: 42px;
+            line-height: 80px;
+        }
+
+        @include respond-to(sm) {
+            font-size: 34px;
+            line-height: 80px;
+        }
+
+        @include respond-to(xs) {
+            font-size: 32px;
+            line-height: 50px;
+        }
+    }
+
+
+    & .join-team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 55px;
+        padding-bottom: 98px;
+    
+        &__header {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 84px;
+            text-align: center;
+
+            @include respond-to(md) {
+                font-size: 50px;
+                
+            }
+
+            @include respond-to(sm) {
+                font-size: 40px;
+            }
+        }
+    
+        &__text {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 34px;
+            text-align: center;
+            max-width: 721px;
+            margin-top: 24px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include respond-to(md) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            @include respond-to(sm) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    
+        &__img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 42px;
+        }
+    }
+
+    & .want-join {
+        background-color: #F5F1EB;
+        width: 100%;
+
+        & .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            @include respond-to(lg) {
+                flex-direction: column-reverse;
+                padding-top: 40px;
+                padding-bottom: 60px;
+            }
+
+            & .want-join__left {
+                position: relative;
+
+                @include respond-to(lg) {
+                    align-self: flex-start;
+                    top: -150px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                @include respond-to(md) {
+                    top: 0px;
+                    width: 100%;
+                    align-items: center;
+                }
+
+                & .want-join__header {
+                    font-weight: 700;
+                    white-space: nowrap;
+
+                    @include respond-to(md) {
+                        margin-top: 30px;
+                    }
+
+                    @include respond-to(md) {
+                        margin-top: 30px;
+                    }
+
+                    @include respond-to(sm) {
+                        white-space: unset;
+                        text-align: center;
+                    }
+                }
+
+                & .want-join__button {
+                    margin-top: 32px;
+
+                    @include respond-to(lg) {
+                        align-self: center;
+                    }
+                }
+            }
+
+            & .want-join__images {
+                position: relative;
+                top: 87px;
+                display: flex;
+                justify-content: end;
+                flex-direction: row-reverse;
+                gap: 25px;
+                min-width: 570px;
+                flex-wrap: wrap;
+
+                @include respond-to(lg) {
+                    top: 0px;
+                }
+
+                @include respond-to(md) {
+                    justify-content: center;
+                }
+
+                @include respond-to(sm) {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    min-width: auto;
+                    gap: 35px;
+                }
+
+                & .want-join__img-1 {
+                    width: 352px;
+                    height: 100%;
+
+                    @include respond-to(sm) {
+                        align-self: flex-start;
+                    }
+                }
+
+                & .want-join__img-2 {
+                    width: 192px;
+                    height: 100%;
+
+                    @include respond-to(sm) {
+                        align-self: flex-end;
+                    }
+                }
+
+                & .want-join__img-3 {
+                    width: 252px;
+                    height: 100%;
+
+
+                    @include respond-to(sm) {
+                        align-self: flex-start;
+                    }
+                }
+
+                & .want-join__img-4 {
+                    width: 360px;
+                    height: 100%;
+                }
+
+                & .want-join__img {
+                    border-radius: 6px;
+
+                    @include respond-to(sm) {
+                        width: 80%;
+                    }
+
+                    @include respond-to(xs) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    & .why-formation {
+        position: relative;
+
+        &__header {
+            font-weight: 500;
+            margin-top: 200px;
+
+            @include respond-to(lg) {
+                margin-top: 80px;
+            }
+
+            @include respond-to(sm) {
+                margin-top: 70px;
+            }
+            
+        }
+
+        & .why-formation__block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 60px;
+
+            &:nth-child(2) {
+                margin-top: 40px;
+            }
+
+            @include respond-to(sm) {
+                flex-direction: column;
+            }
+
+            &__header-cont {
+                height: 100%;
+
+                @include respond-to(sm) {
+                    width: 60%;
+                    margin-left: 20%;
+                }
+               
+                & .header-line {
+                    width: 80%;
+                    height: 100%;
+                    border-bottom: 5px solid #3361BB;
+                
+                    & .header {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 48px;
+                        white-space: nowrap;
+
+                        @include respond-to(md) {
+                            font-size: 28px;
+                            line-height: 36px;
+                        }
+                    }
+                }
+            }
+
+            &__content-cont {
+                position: relative;
+                width: 76%;
+
+                @include respond-to(lg) {
+                    width: auto;
+                    margin-left: 10%;;
+                }
+
+                @include respond-to(sm) {
+                    margin-left: 0;;
+                }
+
+            }
+            
+            &__subheader {
+                margin-top: 58px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 48px;
+
+                @include respond-to(md) {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+
+                @include respond-to(sm) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+            }
+
+            &__text {
+                margin-top: 24px;
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: #636363;
+
+                @include respond-to(sm) {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+
+            &__logo {
+                margin-top: 60px;
+                width: 280px;
+                height: 280px;
+            }
+
+            &__benefits {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 40px;
+
+                & .benefit {
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    margin-bottom: 63px;
+
+                    @include respond-to(md) {
+                        width: 40%;
+                    }
+
+                    @include respond-to(xs) {
+                        width: 90%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    &__header {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 30px;
+                        margin-top: 20px;
+
+                        @include respond-to(sm) {
+                            align-self: center;
+                        } 
+                    }
+
+                    & .benefit__logo {
+                        width: 69px;
+                        @include respond-to(sm) {
+                            align-self: center;
+                        } 
+                    }
+
+                    &__text {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                        margin-top: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    & .life-formation {
+        background-color: #E3ECFC;
+        margin-top: 55px;
+        padding-top: 106px;
+        padding-bottom: 1px;
+
+        @include respond-to(md) {
+            padding-top: 70px;
+        } 
+
+        &__header {
+            font-weight: 500;
+            text-align: center;
+
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 80px;
+            margin-bottom: 150px;
+
+            @include respond-to(md) {
+                flex-direction: column;
+                margin-top: 20px;
+            } 
+
+            & .block__left {
+                display: flex;
+                flex-direction: column;
+                @include respond-to(md) {
+                    flex-direction: row;
+                }
+
+                & .block__header {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 95px;
+                    color: #636363;
+
+                    @include respond-to(lg) {
+                        font-size: 32px;
+                        line-height: 70px;
+                        text-align: center;
+                    } 
+
+                    @include respond-to(md) {
+                        font-size: 28px;
+                        line-height: 36px;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        margin-bottom: 30px;
+                    } 
+
+                    @include respond-to(sm) {
+                        font-size: 22px;
+                        line-height: 28px;
+                    } 
+                    @include respond-to(xs) {
+                        font-size: 16px;
+                        line-height: 22px;
+                    } 
+                }
+
+                & .block__text {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 40px;
+                    max-width: 401px;
+                    margin-left: 40px;
+
+                    @include respond-to(md) {
+                        margin-top: 50px;
+                        max-width: 60%;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        font-size: 22px;
+                        line-height: 36px;
+                    } 
+
+                    @include respond-to(sm) {
+                        max-width: 90%;
+                        font-size: 20px;
+                        line-height: 32px;
+                    } 
+
+                    @include respond-to(xs) {
+                        max-width: 95%;
+                        font-size: 18px;
+                        line-height: 26px;
+                    } 
+                }
+            }
+            
+            & .block__right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin-right: 20px;
+                margin-left: 20px;
+
+                @include respond-to(sm) {
+                    margin-right: 10px;
+                    margin-left: 10px;
+                } 
+
+                & .image {
+                    border-radius: 6px;
+                    z-index: 100;
+                }   
+
+                & .carousel {
+                    max-width: 606px;
+                    max-height: 312px;
+                    
+                                    
+                    & .slider-block {
+                        width: 100%;
+
+                        & .slider-block-inner {
+                            height: 100%;
+                            z-index: 100;
+                            position: relative;
+
+
+
+                            & .owl-dots {
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 40px;   
+
+                                & .owl-dot {
+                                    border-radius: 50%;
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-right: 8px;
+                                    margin-left: 8px;
+                                    cursor: pointer;
+                                    background-color: #B3B3B3;
+            
+                                    @include respond-to(sm) {
+                                        width: 20px;
+                                        height: 20px;
+                                        margin-right: 15px;
+                                        margin-left: 15px;
+                                    } 
+
+                                    &.active {
+                                        background-color: #3361BB;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .circle-cont {
+                    position: absolute;
+                    bottom: -28px;
+                    z-index: 5;
+                    width: 110%;
+                    height: 75px;
+
+                    & .circle {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    & .employee-spotlight {
+
+        & .container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &__header {
+            margin-top: 100px;
+            font-weight: 500;
+            text-align: center;
+
+            @include respond-to(sm) {
+                margin-top: 70px;
+            } 
+        }
+
+        & .employee-spotlight__slider {
+            margin-top: 60px;
+            overflow: hidden;
+            position: relative;
+
+            & .item {
+                flex-shrink: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between; 
+                align-items: flex-start;
+    
+                @include respond-to(sm) {
+                    flex-direction: column;
+                } 
+    
+                & .image {
+                    border-radius: 6px;
+                    max-width: 50%;
+                    height: auto;
+    
+                    @include respond-to(sm) {
+                        max-width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    } 
+                }
+    
+                & .text-cont {
+                    width: 42%;
+                    display: flex;
+                    flex-direction: column;
+    
+                    @include respond-to(sm) {
+                        width: 90%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 40px;
+                    }   
+    
+                    & .block__header {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 28px;
+                        line-height: 42px;
+    
+                        @include respond-to(md) {
+                            font-size: 26px;
+                            line-height: 32px;
+                        } 
+    
+                        @include respond-to(sm) {
+                            text-align: center;
+                        } 
+                    }
+    
+                    & .block__subheader {
+                        margin-top: 40px;
+                        font-family: 'Source Sans Pro';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 33px;
+                        color: #636363;
+    
+                        @include respond-to(md) {
+                            font-size: 20px;
+                            line-height: 28px;
+                        } 
+                    }
+    
+                    & .block__text {
+                        margin-top: 18px;
+                        font-family: 'Source Sans Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #636363;
+    
+                        @include respond-to(md) {
+                            font-size: 18px;
+                            line-height: 28px;
+                        } 
+                    }
+                }
+            }
+
+            & .owl-dots {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;   
+
+                & .owl-dot {
+                    border-radius: 50%;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 12px;
+                    margin-left: 12px;
+                    background-color: #B3B3B3;
+
+                    @include respond-to(sm) {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 15px;
+                        margin-left: 15px;
+                    } 
+
+                    &.active {
+                        background-color: #3361BB;
+                    }
+                }
+            }
+        }
+    }
+
+
+    & .join-team_2 {
+        background-color: #F5F1EB;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 107px;
+        padding-bottom: 123px;
+        width: 100%;
+
+        @include respond-to(sm) {
+            padding-top: 60px;
+            padding-bottom: 70px;
+        } 
+
+        & .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__button {
+            margin-top: 24px;
+
+            @include respond-to(sm) {
+                margin-top: 35px;
+            } 
+        }
+    }
+
+
+    & .contact-recruting {
+        padding-bottom: 118px;
+        
+        @include respond-to(sm) {
+            padding-bottom: 70px;
+        } 
+
+        &__header {
+            margin-top: 118px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 60px;
+
+            
+            @include respond-to(sm) {
+                margin-top: 70px;
+            } 
+        }
+
+        &__subheader {
+            margin-top: 24px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        & .content {
+            margin-top: 80px;   
+            display: flex;
+            flex-direction: row;
+           
+            @include respond-to(sm) {
+                flex-direction: column-reverse;
+                margin-top: 40px;
+            } 
+
+            & .image-cont {
+                width: 44%;
+
+                @include respond-to(sm) {
+                    display: flex;  
+                    justify-content: center;
+                    width: 100%;
+                    margin-top: 40px;
+                } 
+            }
+
+            & .form-contact {
+                margin-left: 10%;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+
+                @include respond-to(md) {
+                    margin-left: 7%;
+                     width: 49%;
+                } 
+
+                @include respond-to(sm) {
+                    margin-left: 0;
+                    width: 100%;
+                } 
+
+                & .form-input {
+                    margin-bottom: 23px;
+                    height: 53px;
+                    width: 100%;
+                    padding-left: 30px;
+                    border-radius: 8px;
+                    border: 1px solid black;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 40px;
+
+                    &::placeholder {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 40px;
+                    }
+                }
+
+                & .comments {
+                    height: 117px;
+                    padding: 8px 30px;
+                }
+
+                & .form-contact__button {
+                    margin-left: 0;
+                    margin-right: auto;
+
+                    @include respond-to(sm) {
+                        margin-left: auto;
+                        width: 40%;
+                    } 
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+

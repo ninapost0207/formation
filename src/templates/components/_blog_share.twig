@@ -1,0 +1,10 @@
+<div class="blog__share-cont">
+    <span class="blog__share__text">Share</span>
+    <div class="blog__links-cont">
+        {% for share in shares %}
+            <a href={{ share.link_to }} class="blog__share__link">
+                <img src="{{ share.link_to_img }}" alt={{ share.link_to }} class="blog__share__img">
+            </a>
+        {% endfor %}
+    </div>
+</div>

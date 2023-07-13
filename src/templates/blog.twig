@@ -1,0 +1,80 @@
+{% extends "_layout.twig" %}
+
+{% set pageTitle = 'Blog' %}
+{% set pageClass = 'blog' %}
+
+
+{% set blog__hero_data = {
+    header: "7 Customer Retention Strategies That Still Work",
+    link_to_img: "../assets/img/blog__hero_1.png",
+    author: "By Author",
+    date: "October 15, 2021"
+  } %}
+
+{% set blog__share_data = [
+  {
+    link_to: "http://facebook.com",
+    link_to_img: "../assets/img/blog__icon_facebook.svg"
+  },
+  {
+    link_to: "http://twitter.com",
+    link_to_img: "../assets/img/blog__icon_twitter.svg"
+  },
+  {
+    link_to: "http://linkedin.com",
+    link_to_img: "../assets/img/blog__icon_linkedin.svg"
+  }
+  
+  ] %}
+
+
+
+{% set posts = [
+  { 
+    resource_id: "101",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 1",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "102",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 2",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." },
+  { 
+    resource_id: "103",
+    link_to_img: "../assets/img/resource__preview__blank.png",
+    resource_header: "Title of Resource 3",
+    resource_text: "Lorem ipsum dolor sit amet. Rem similique fugiat cum iure numquam est quas nulla sit." }
+ ]
+    %}
+
+
+
+{% block content %}
+  {% include "partials/_header.html" %}
+  <section class="blog-hero__section">
+    <div class="container">
+      {% include "components/_blog_hero.twig" with {hero: blog__hero_data} %}
+    </div>
+  </section>
+
+
+
+
+  <div class="container">
+      <section class="blog-content__section">
+        {% include "components/_blog_nav.twig" with {shares: blog__share_data } %}
+        {% include "components/_blog_content.twig" with {hero: blog__hero_data} %}
+      </section>
+      {% include "components/_related_posts.twig" with {posts }  %}
+  </div>
+
+
+  
+  <section class="formation-works__section">
+    <div class="container">
+      {% include "components/_formation-works.twig" %}
+    </div>
+  </section>
+{% endblock %}
+ 

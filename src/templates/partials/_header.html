@@ -1,0 +1,19 @@
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html"  class="top-logo">
+          <span class="sr-only">Foundation logo, the link leads to the main page of the site</span> <!--//!!! WTF? -->
+          {% if pageClass == 'smth' or pageClass == 'smth' or pageClass == 'smth' %}
+            <img src="../assets/img/top-logo-white.png" alt="Foundation logo">
+          {% else %}
+            <img src="../assets/img/top-logo.png" alt="Foundation logo">
+          {% endif %}
+        </a>
+        {% include '_navigation.html' %}
+        
+        <a href="#" class="btn request-btn">Request Demo</a>
+
+      </div>
+    </div>
+
+  </header>
